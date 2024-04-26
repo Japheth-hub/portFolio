@@ -3,21 +3,29 @@ import './certifications.css'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './certifications.css'
+import { Cloudinary } from '@cloudinary/url-gen'
+import { AdvancedImage } from '@cloudinary/react'
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'dwnrrsxq9'
+  }
+})
 
 export default function Certifications() {
 
   const docs = [
     {
       label: 'Full Stack',
-      src: '/despacho.jpg'
+      src: 'fullstack'
     },
     {
       label: 'JavaScript',
-      src: '/fccJavascript.png'
+      src: 'fccjavascript'
     },
     {
       label: 'Web Responsive',
-      src: '/fccResponsive.png'
+      src: 'fccresponsive'
     }
   ]
 
@@ -54,7 +62,7 @@ export default function Certifications() {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            {selectedDoc ? <img className='imgCertificate' src={selectedDoc.src} alt={selectedDoc.label} />  : "Selecciona un Certificado"}
+            {selectedDoc ? <AdvancedImage className='imgCertificate' cldImg={cld.image(`portfolio/${selectedDoc.src}`)} />   : "Selecciona un Certificado"}
           </motion.div>
         </AnimatePresence>
       </main>

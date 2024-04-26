@@ -1,5 +1,13 @@
 import React from 'react'
 import './aboutme.css'
+import {Cloudinary} from '@cloudinary/url-gen'
+import {AdvancedImage} from '@cloudinary/react'
+
+const cld = new Cloudinary({
+  cloud : {
+    cloudName: 'dwnrrsxq9'
+  }
+})
 
 export default function Aboutme() {
   const skills = [
@@ -39,21 +47,13 @@ export default function Aboutme() {
       name: 'MySql',
       img: '/MySql.svg'
     },
-    {
-      name: 'Postgresql',
-      img: '/Postgresql.png'
-    },
-    {
-      name: 'Sequelize',
-      img: '/Sequelize.png'
-    }
   ];
 
 
   return (
     <div className='divAboutme'>
       <div className='aboutImage'>
-        <img className='Angel' src="./perfil.jpg" alt="Angel Ramirez" />
+        <AdvancedImage className='Angel' cldImg={cld.image('portfolio/angelramirez')} />
         <ul className='skills'>
           {skills && skills.map((skill, index) => {
             return (
@@ -65,6 +65,18 @@ export default function Aboutme() {
               </li>
             )
           })}
+          <li>
+            <div className='cardSkill'>
+              <AdvancedImage cldImg={cld.image('portfolio/postgres')}/>
+              <span>Postgresql</span>
+            </div>
+          </li>
+          <li>
+            <div className='cardSkill'>
+              <AdvancedImage cldImg={cld.image('portfolio/sequelize')}/>
+              <span>Sequelize</span>
+            </div>
+          </li>
         </ul>
       </div>
       <div className='info'>
