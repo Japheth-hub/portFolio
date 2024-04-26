@@ -1,8 +1,7 @@
-# React + Vite
+# Angel Ramirez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portfolio en donde encontraras infomacion sobre mi, por ejemplo, de donde soy y que habilidades tecnicas he desarrollado a lo largo de mi carrera,  ademas podras ver algunos de mis proyectos en los que he trabajado como por ejemplo:
 
-Currently, two official plugins are available:
+* FilmFlow - Este es un proyecto grupal en el cual participamos 7 integrantes duarnte 4 semanas. Fue una gran experiencia haber trabajado con compañeros de distintos paises como Argentina y Venezuela. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* MyCountriesApp - Mi proyecto individual en una de las etapas finales del bootcamp "SoyHenry", en este proyecto se implemento todo lo aprendido en la cursada, demostrando asi mis conocimiento de forma solida y clara
