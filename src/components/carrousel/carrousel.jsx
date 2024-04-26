@@ -24,7 +24,7 @@ export default function Carrousel({image}) {
     <div className='slide'>
           <div className='infoProyects'>
             <a href='https://filmflow.chekogarcia.com.mx/' target='_blank'>
-              <AdvancedImage className='gif' cldImg={cld.image('portfolio/filmflow')} />
+              <AdvancedImage className='gif' alt='filmflow' cldImg={cld.image('portfolio/filmflow')} />
             </a>
             <h3>FilmFlow</h3>
             <div className='tools'>
@@ -35,7 +35,7 @@ export default function Carrousel({image}) {
 
           <div className='infoProyects'>
             <a href='https://mycountries.vercel.app/home' target='_blank'>
-              <AdvancedImage className='gif' cldImg={cld.image('portfolio/countries')} />
+              <AdvancedImage className='gif' alt='countries' cldImg={cld.image('portfolio/countries')} />
             </a>
             <h3>CountriesApp</h3>
             <div className='tools'>
@@ -46,7 +46,7 @@ export default function Carrousel({image}) {
 
           <div className='infoProyects'>
             <a href='https://pokeangel.netlify.app/' target='_blank'>
-              <AdvancedImage className='gif' cldImg={cld.image('portfolio/pokeangel')} />
+              <AdvancedImage className='gif' alt='pokeangel' cldImg={cld.image('portfolio/pokeangel')} />
             </a>
             <h3>Pokeangel</h3>
             <div className='tools'>

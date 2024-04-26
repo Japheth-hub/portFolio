@@ -62,7 +62,7 @@ export default function Certifications() {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            {selectedDoc ? <AdvancedImage className='imgCertificate' cldImg={cld.image(`portfolio/${selectedDoc.src}`)} />   : "Selecciona un Certificado"}
+            {selectedDoc ? <AdvancedImage className='imgCertificate' alt={selectedDoc.name} cldImg={cld.image(`portfolio/${selectedDoc.src}`)} />   : "Selecciona un Certificado"}
           </motion.div>
         </AnimatePresence>
       </main>
