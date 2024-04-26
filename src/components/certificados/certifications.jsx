@@ -17,15 +17,18 @@ export default function Certifications() {
   const docs = [
     {
       label: 'Full Stack',
-      src: 'fullstack'
+      src: 'henry',
+      link: 'https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=ab1f1c8313ebcd7291e8f219e28f5152f9e456ac9b25cb0032d637d87819e874'
     },
     {
       label: 'JavaScript',
-      src: 'fccjavascript'
+      src: 'fccjavascript',
+      link: 'https://www.freecodecamp.org/certification/fccbacba418-7b31-4cb8-802b-a102702db02b/javascript-algorithms-and-data-structures'
     },
     {
       label: 'Web Responsive',
-      src: 'fccresponsive'
+      src: 'fccresponsive',
+      link: 'https://www.freecodecamp.org/certification/fccbacba418-7b31-4cb8-802b-a102702db02b/responsive-web-design'
     }
   ]
 
@@ -62,7 +65,7 @@ export default function Certifications() {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            {selectedDoc ? <AdvancedImage className='imgCertificate' alt={selectedDoc.name} cldImg={cld.image(`portfolio/${selectedDoc.src}`)} />   : "Selecciona un Certificado"}
+            {selectedDoc ? <a href={selectedDoc.link} target='_blank'><AdvancedImage className='imgCertificate' alt={selectedDoc.name} cldImg={cld.image(`portfolio/${selectedDoc.src}`)} /></a>   : "Selecciona un Certificado"}
           </motion.div>
         </AnimatePresence>
       </main>
