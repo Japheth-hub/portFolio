@@ -29,7 +29,7 @@
 
     .descriptionProyect{
       border: 1px solid white;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.3);
       color: black;
       text-shadow: 1px 0px 2px gray, -1px 0px 2px gray, 0px 1px 2px gray, 0px -1px 2px gray;
       font-size: 1.1rem;
